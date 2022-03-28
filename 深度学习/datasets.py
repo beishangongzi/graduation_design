@@ -74,7 +74,7 @@ class ObtDataset(tfds.core.GeneratorBasedBuilder):
         train_split = tfds.core.SplitGenerator(
             name="train",
             gen_kwargs={
-                "path": extracted_path + "/obt_dataset"
+                "path": extracted_path
             }
         )
         return [train_split]
