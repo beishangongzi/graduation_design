@@ -53,7 +53,7 @@ class ObtDataset(tfds.core.GeneratorBasedBuilder):
             features=tfds.features.FeaturesDict({
                 # These are the features of your dataset like images, labels ...
                 'image': tfds.features.Tensor(shape=(500, 500, 32), dtype=tf.uint16),
-                'segmentation_mask': tfds.features.Tensor(shape=(500, 500), dtype=tf.uint8)
+                'segmentation_mask': tfds.features.Image(shape=(500, 500, 1), dtype=tf.uint8)
             }),
             # If there's a common (input, target) tuple from the
             # features, specify them here. They'll be used if
