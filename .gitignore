@@ -1,6 +1,7 @@
 Data/
 中期答辩/
 others/
+论文/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
